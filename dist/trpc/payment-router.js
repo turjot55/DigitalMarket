@@ -101,7 +101,7 @@ exports.paymentRouter = (0, trpc_1.router)({
                         return [4 /*yield*/, strip_1.stripe.checkout.sessions.create({
                                 success_url: "".concat(process.env.NEXT_PUBLIC_SERVER_URL, "/thank-you?orderId=").concat(order.id),
                                 cancel_url: "".concat(process.env.NEXT_PUBLIC_SERVER_URL, "/cart"),
-                                // payment_method_types: ["card", "paypal"],
+                                payment_method_types: ["card", "paypal"],
                                 mode: "payment",
                                 metadata: {
                                     userId: user.id,
