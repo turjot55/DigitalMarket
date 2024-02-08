@@ -26,10 +26,10 @@ export function formatPrice(
 }
 
 export function constructMetadata({
-  title = "DigitalMarket bt Turja - the marketplace for digital assets",
+  title = "DigitalMarket by Turja - the marketplace for digital assets",
   description = "DigitalMarket Place is an open-source marketplace for high-quality digital goods.",
   image = "/thumbnail.png",
-  icons = "/favicon.ico",
+  icons = "/vector.ico",
   noIndex = false,
 }: {
   title?: string;
