@@ -6,8 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import UserAccountNav from "./UserAccountNav";
+import { getServerSideUser } from "lib/payload-utils";
+import { buttonVariants } from "./ui/button";
+import { cookies } from "next/headers";
 
 const MobileNav = () => {
+  // const nextCookies = cookies();
+  // const { user } = await getServerSideUser(nextCookies);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const pathname = usePathname();
@@ -99,6 +105,18 @@ const MobileNav = () => {
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
+                {/* {user ? (
+                  // <p></p>
+                  <UserAccountNav user={user} />
+                ) : (
+                  <Link
+                    href="/sign-up"
+                    className={buttonVariants({
+                      variant: "ghost",
+                    })}>
+                    Create Account
+                  </Link>
+                )} */}
                 <Link
                   onClick={() => closeOnCurrent("/sign-in")}
                   href="/sign-in"

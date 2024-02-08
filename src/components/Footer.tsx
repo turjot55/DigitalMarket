@@ -40,7 +40,7 @@ const Footer = () => {
                     you can do so in minutes.{" "}
                     <Link
                       href="/sign-in?as=seller"
-                      className="whitespace-nowrap font-medium text-black hover:text-zinc-900">
+                      className="whitespace-nowrap font-medium text-black hover:text-red-500">
                       Get started &rarr;
                     </Link>
                   </p>
@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} All Rights Reserved by{" "}
-              <span className="text-red-500 font-bold">
+              <span className="text-red-500 font-bold hover:text-gray-900">
                 {" "}
                 <a
                   href="https://www.linkedin.com/in/turja-talukder-6a0a5a103/"
