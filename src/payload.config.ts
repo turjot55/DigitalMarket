@@ -24,7 +24,7 @@ export default buildConfig({
     user: "users",
     bundler: webpackBundler(),
     meta: {
-      titleSuffix: "- DigitalHippo",
+      titleSuffix: "- DigitalMarketBy Turja",
       favicon: "/favicon.ico",
       ogImage: "/thumbnail.jpg",
     },
