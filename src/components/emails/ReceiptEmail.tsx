@@ -49,7 +49,7 @@ export const ReceiptEmail = ({
                 src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-email-sent.png`}
                 width="100"
                 height="100"
-                alt="DigitalHippo"
+                alt="DigitalMarket"
               />
             </Column>
 
