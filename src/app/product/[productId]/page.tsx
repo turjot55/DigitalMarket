@@ -54,6 +54,8 @@ const Page = async ({ params }: PageProps) => {
 
   console.log(label, "data");
 
+  console.log(product.catagory, "name");
+
   return (
     <MaxWidthWrapper className="bg-white">
       <div className="bg-white">

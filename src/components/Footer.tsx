@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icons } from "./Icons";
 import Link from "next/link";
+import ConditionTerm from "../components/Conditon";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -68,15 +69,16 @@ const Footer = () => {
           <div className="mt-4 flex items-center justify-center md:mt-0">
             <div className="flex space-x-8">
               <Link
-                href="#"
+                href="/terms"
                 className="text-sm text-muted-foreground hover:text-gray-600">
                 Terms
               </Link>
               <Link
-                href="#"
+                href="/policy"
                 className="text-sm text-muted-foreground hover:text-gray-600">
                 Privacy Policy
               </Link>
+
               <Link
                 href="#"
                 className="text-sm text-muted-foreground hover:text-gray-600">
