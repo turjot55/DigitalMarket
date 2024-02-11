@@ -80,7 +80,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="#"
+                href="/cookies"
                 className="text-sm text-muted-foreground hover:text-gray-600">
                 Cookie Policy
               </Link>
