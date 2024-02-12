@@ -38,8 +38,6 @@ export const paymentRouter = router({
         },
       });
 
-      console.log(order, "hello");
-
       const line_items: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
 
       filteredProducts.forEach((product) => {
@@ -50,7 +48,7 @@ export const paymentRouter = router({
       });
 
       line_items.push({
-        price: "price_1OgShhBd564Y5DYj9PXIJewK",
+        price: "price_1OCeBwA19umTXGu8s4p2G3aX",
         quantity: 1,
         adjustable_quantity: {
           enabled: false,
@@ -59,10 +57,10 @@ export const paymentRouter = router({
 
       try {
         const stripeSession = await stripe.checkout.sessions.create({
-          mode: "payment",
           success_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/thank-you?orderId=${order.id}`,
           cancel_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/cart`,
-          // payment_method_types: ['card', 'paypal'],
+          payment_method_types: ["card", "paypal"],
+          mode: "payment",
           metadata: {
             userId: user.id,
             orderId: order.id,

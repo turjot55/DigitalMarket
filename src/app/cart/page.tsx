@@ -128,10 +128,13 @@ const Page = () => {
                           <div className="mt-4 sm:mt-0 sm:pr-9 w-20">
                             <div className="absolute right-0 top-0">
                               <Button
+                                className="bg-red-500"
                                 aria-label="remove product"
                                 onClick={() => removeItem(product.id)}
-                                variant="ghost">
-                                <X className="h-5 w-5" aria-hidden="true" />
+                                // variant="ghost"
+                              >
+                                <X className="h-5 w-5 " aria-hidden="true" />
+                                Remove
                               </Button>
                             </div>
                           </div>
